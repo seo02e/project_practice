@@ -13,8 +13,3 @@ db_name = os.getenv("DB_NAME")
 db_info = f"mysql+pymysql://{user_id}:{password}@{host}/{db_name}"
 engine = create_engine(db_info, connect_args={})
 print(engine)
-
-print("USER_ID =", user_id)
-print("DB_HOST =", host)
-print("DB_NAME =", db_name)
-print("DB_INFO =", db_info)

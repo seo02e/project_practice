@@ -1,0 +1,7 @@
+fastapi	백엔드 API 서버
+uvicorn	FastAPI 실행 서버
+sqlalchemy	DB 연결
+pymysql	MariaDB / MySQL 드라이버
+pandas	CSV 읽기
+python-dotenv	.env 환경변수
+bcrypt	비밀번호 암호화 (로그인용)
