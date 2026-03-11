@@ -1,8 +1,8 @@
 from fastapi import APIRouter
-from controllers.post import get_institution_controller
+from controllers.post import get_dashboard_controller
 
-router = APIRouter(prefix="/institution", tags=["institution"])
+router = APIRouter(prefix="/dashboard", tags=["dashboard"])
 
 @router.get("/{institution}")
 def get_institution(institution: str):
-    return get_institution_controller(institution)
+    return get_dashboard_controller(institution)
