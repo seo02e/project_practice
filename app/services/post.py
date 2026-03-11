@@ -6,13 +6,10 @@ from pandasql import sqldf
 import pandas as pd
 from utils.database import engine
 
-def load_csv_to_table():
-    df = pd.read_csv("data/institution_kpi_table.csv")
-    df.to_sql("institution_table", engine, index=False, if_exists="replace")
-
 def get_institution(institution:str):
     query = """
-    SELECT * FROM df
+    SELECT *
+    FROM institution_table
     WHERE institution = :institution
     """
     with engine.connect() as con:
